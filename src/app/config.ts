@@ -63,6 +63,6 @@ export const WORK_CARDS = [
     name: "University of Sheffield",
     logo: "/work/sheff.png",
     position: "BSc. Computer Science",
-    link: "https://capitalone.co.uk/",
+    link: "https://www.sheffield.ac.uk/",
   },
 ];
