@@ -5,9 +5,9 @@ interface WorkCardProps {
   logo: string;
   link: string;
   name: string;
-  industry: string;
   position: string;
   logoDark?: string;
+  industry?: string;
 }
 
 export const WorkCard = ({
@@ -29,14 +29,16 @@ export const WorkCard = ({
       width={48}
       height={48}
       alt={`${name}'s logo`}
-      className="object-contain w-12 h-12"
+      className="object-contain w-12 h-12 rounded-xl"
     />
     <div className="w-full flex flex-col">
       <div className="w-full flex sm:flex-wrap-reverse">
         <p className="text-lg font-medium flex-1">{name}</p>
-        <span className="bg-white-primary dark:bg-black-terciary rounded-lg text-xs px-2 py-1 h-min border dark:border-0">
-          {industry}
-        </span>
+        {industry && (
+          <span className="bg-white-primary dark:bg-black-terciary rounded-lg text-xs px-2 py-1 h-min border dark:border-0">
+            {industry}
+          </span>
+        )}
       </div>
       <p className="text-sm">{position}</p>
     </div>

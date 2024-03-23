@@ -80,9 +80,9 @@ export default function Home() {
           />
         ))}
       </div>
-      {/* <div className="block sm:hidden">
+      <div className="block sm:hidden">
         <SocialLinks />
-      </div> */}
+      </div>
     </div>
   );
 }
