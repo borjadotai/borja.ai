@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider attribute="class">
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <main className="w-full flex min-h-screen flex-col items-center py-8 bg-white dark:bg-black-primary">
             <ThemeSwitch />
             {children}
